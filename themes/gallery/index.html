@@ -1,0 +1,70 @@
+<p>Here you&rsquo;ll find a simple gallery, that just adds all of the images at full-width directly in the post content.</p>
+
+<p><br></p>
+
+<h6>front matter</h6>
+
+<pre><code class="yml">---
+type: gallery
+gallery:
+    - images:
+      - filename: gallery-1.jpg
+        alttext: Bloom Flat
+      - filename: gallery-2.jpg
+        alttext: Bloom
+      - filename: gallery-3.jpg
+        alttext: Blossom in a Star
+      - filename: gallery-4.jpg
+        alttext: Blossom
+      - filename: gallery-5.jpg
+        alttext: Bubbly Bloom
+      - filename: gallery-6.jpg
+        alttext: Rays of Gold
+      - filename: gallery-7.jpg
+        alttext: Exotic
+      - filename: gallery-8.jpg
+        alttext: Filled out
+---
+</code></pre>
+
+<p><br></p>
+
+<h6>post content</h6>
+
+<pre><code class="liquid">
+{% include gallery.html %}
+</code></pre>
+
+<!-- simple gallery, where each of the files is just put after one another -->
+
+
+<div class="gallery">
+    
+        
+            <b>Bloom Flat</b>
+            <img src="/gallery-1.jpg" alt="Bloom Flat">
+        
+            <b>Bloom</b>
+            <img src="/gallery-2.jpg" alt="Bloom">
+        
+            <b>Blossom in a Star</b>
+            <img src="/gallery-3.jpg" alt="Blossom in a Star">
+        
+            <b>Blossom</b>
+            <img src="/gallery-4.jpg" alt="Blossom">
+        
+            <b>Bubbly Bloom</b>
+            <img src="/gallery-5.jpg" alt="Bubbly Bloom">
+        
+            <b>Rays of Gold</b>
+            <img src="/gallery-6.jpg" alt="Rays of Gold">
+        
+            <b>Exotic</b>
+            <img src="/gallery-7.jpg" alt="Exotic">
+        
+            <b>Filled out</b>
+            <img src="/gallery-8.jpg" alt="Filled out">
+        
+    
+</div>
+
